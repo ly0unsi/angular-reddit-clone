@@ -16,6 +16,8 @@ import { PostTileComponent } from './shared/post-tile/post-tile.component';
 import { SideBarComponent } from './shared/side-bar/side-bar.component';
 import { VoteButtonComponent } from './shared/vote-button/vote-button.component';
 import { SubredditSideBarComponent } from './shared/subreddit-side-bar/subreddit-side-bar.component';
+import { CreteSubredditComponent } from './subreddit/crete-subreddit/crete-subreddit.component';
+import { CreatePostsComponent } from './post/create-posts/create-posts.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +29,9 @@ import { SubredditSideBarComponent } from './shared/subreddit-side-bar/subreddit
     PostTileComponent,
     SideBarComponent,
     VoteButtonComponent,
-    SubredditSideBarComponent
+    SubredditSideBarComponent,
+    CreteSubredditComponent,
+    CreatePostsComponent
 
   ],
   imports: [
