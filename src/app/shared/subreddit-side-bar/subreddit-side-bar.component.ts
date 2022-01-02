@@ -11,7 +11,7 @@ export class SubredditSideBarComponent implements OnInit {
   subreddits:Array<SubredditModel>
   displayViewAll:boolean;
   constructor(private subredditService:SubredditService) {
-    this.subredditService.getAllSubreddit().subscribe(data=>{
+    this.subredditService.getAllSubreddits().subscribe(data=>{
       if (data.length>=4) {
         this.subreddits=data.splice(0,3)
         this.displayViewAll=true

@@ -10,6 +10,7 @@ import { SubredditModel } from '../subredditResponse';
   templateUrl: './crete-subreddit.component.html',
   styleUrls: ['./crete-subreddit.component.css']
 })
+
 export class CreteSubredditComponent implements OnInit {
   createSubredditForm: FormGroup;
   subredditModel: SubredditModel;

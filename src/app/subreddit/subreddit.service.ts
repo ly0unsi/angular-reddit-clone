@@ -11,7 +11,7 @@ export class SubredditService {
   constructor(private http:HttpClient) {
 
    }
-   getAllSubreddit():Observable<Array<SubredditModel>>{
+   getAllSubreddits():Observable<Array<SubredditModel>>{
      return this.http.get<Array<SubredditModel>>('http://localhost:8080/api/subreddit')
    }
 

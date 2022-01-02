@@ -5,6 +5,7 @@ import { SignupComponent } from './auth/signup/signup.component';
 import { HomeComponent } from './home/home.component';
 import { CreatePostsComponent } from './post/create-posts/create-posts.component';
 import { CreteSubredditComponent } from './subreddit/crete-subreddit/crete-subreddit.component';
+import { ListSubredditsComponent } from './subreddit/list-subreddits/list-subreddits.component';
 
 const routes: Routes = [
 
@@ -13,6 +14,7 @@ const routes: Routes = [
   {path:'login',component:LoginComponent},
   {path:'create-subreddit',component:CreteSubredditComponent},
   {path:'create-post',component:CreatePostsComponent},
+  {path:'list-subreddits',component:ListSubredditsComponent},
 ];
 
 @NgModule({

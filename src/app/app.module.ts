@@ -18,6 +18,7 @@ import { VoteButtonComponent } from './shared/vote-button/vote-button.component'
 import { SubredditSideBarComponent } from './shared/subreddit-side-bar/subreddit-side-bar.component';
 import { CreteSubredditComponent } from './subreddit/crete-subreddit/crete-subreddit.component';
 import { CreatePostsComponent } from './post/create-posts/create-posts.component';
+import { ListSubredditsComponent } from './subreddit/list-subreddits/list-subreddits.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { CreatePostsComponent } from './post/create-posts/create-posts.component
     VoteButtonComponent,
     SubredditSideBarComponent,
     CreteSubredditComponent,
-    CreatePostsComponent
+    CreatePostsComponent,
+    ListSubredditsComponent
 
   ],
   imports: [
