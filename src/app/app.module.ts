@@ -19,6 +19,9 @@ import { SubredditSideBarComponent } from './shared/subreddit-side-bar/subreddit
 import { CreteSubredditComponent } from './subreddit/crete-subreddit/crete-subreddit.component';
 import { CreatePostsComponent } from './post/create-posts/create-posts.component';
 import { ListSubredditsComponent } from './subreddit/list-subreddits/list-subreddits.component';
+import { TokenInterceptor } from './token-interceptor';
+import {  HTTP_INTERCEPTORS } from '@angular/common/http';
+import { EditorModule } from '@tinymce/tinymce-angular';
 
 @NgModule({
   declarations: [
@@ -44,9 +47,16 @@ import { ListSubredditsComponent } from './subreddit/list-subreddits/list-subred
     NgxWebstorageModule.forRoot(),
     BrowserAnimationsModule,
     ToastrModule.forRoot(),
-    FontAwesomeModule
+    FontAwesomeModule,
+    EditorModule
   ],
-  providers: [],
+  providers: [
+    {
+      provide: HTTP_INTERCEPTORS,
+      useClass: TokenInterceptor,
+      multi: true
+    }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

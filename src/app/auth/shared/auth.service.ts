@@ -30,7 +30,7 @@ export class AuthService {
     )
   }
   getJwtToken(){
-    return this.localStorage.retrieve('authentificationToken')
+    return this.localStorage.retrieve('authenticationToken')
   }
   getUserName() {
     return this.localStorage.retrieve('username');
