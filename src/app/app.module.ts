@@ -17,11 +17,12 @@ import { SideBarComponent } from './shared/side-bar/side-bar.component';
 import { VoteButtonComponent } from './shared/vote-button/vote-button.component';
 import { SubredditSideBarComponent } from './shared/subreddit-side-bar/subreddit-side-bar.component';
 import { CreteSubredditComponent } from './subreddit/crete-subreddit/crete-subreddit.component';
-import { CreatePostsComponent } from './post/create-posts/create-posts.component';
+import { CreatePostComponent } from './post/create-posts/create-posts.component';
 import { ListSubredditsComponent } from './subreddit/list-subreddits/list-subreddits.component';
 import { TokenInterceptor } from './token-interceptor';
 import {  HTTP_INTERCEPTORS } from '@angular/common/http';
 import { EditorModule } from '@tinymce/tinymce-angular';
+import { ViewPostComponent } from './post/view-post/view-post.component';
 
 @NgModule({
   declarations: [
@@ -35,8 +36,9 @@ import { EditorModule } from '@tinymce/tinymce-angular';
     VoteButtonComponent,
     SubredditSideBarComponent,
     CreteSubredditComponent,
-    CreatePostsComponent,
-    ListSubredditsComponent
+    CreatePostComponent,
+    ListSubredditsComponent,
+    ViewPostComponent
 
   ],
   imports: [
